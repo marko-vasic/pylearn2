@@ -35,13 +35,13 @@ __email__ = "pylearn-dev@googlegroups"
 import functools
 import warnings
 import numpy as np
-from theano.compat.six.moves import xrange
+from six.moves import xrange
 import theano
 import theano.sparse
 from theano import tensor
 from theano.tensor import TensorType
 from theano.gof.op import get_debug_values
-from theano.sandbox.cuda.type import CudaNdarrayType
+# from theano.sandbox.cuda.type import CudaNdarrayType
 from pylearn2.utils import py_integer_types, safe_zip, sharedX, wraps
 from pylearn2.format.target_format import OneHotFormatter
 
